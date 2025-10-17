@@ -1,10 +1,8 @@
 import React from "react";
-import Header from "./components/Nav/Header";
 
 function Contact() {
   return (
     <div className="flex items-center justify-center min-h-[calc(100vh-80px)]">
-      <Header logo="F" nomApp="Florentin" />
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
         <div className="mb-8">
           <div className="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto">

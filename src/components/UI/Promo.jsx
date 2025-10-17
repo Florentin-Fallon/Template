@@ -1,25 +1,47 @@
 import React from "react";
+import { FaMotorcycle, FaLeaf, FaStar, FaHeadset } from "react-icons/fa";
 
 function Promo() {
   return (
-    <div className="flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
-      <div className=" items-center grid grid-cols-3 gap-8 w-full justify-center bg-green-600/20 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg">
-        <div className=" p-6">
-          <h1 className="text-4xl font-light text-center mb-2">2025</h1>
-          <p className="text-center text-lg text-gray-500">Année de création</p>
-        </div>
-        <div className="p-6">
-          <h1 className="text-4xl font-light text-center mb-2">1</h1>
-          <p className="text-center text-lg text-gray-500">Nombre de clients</p>
-        </div>
-        <div className="p-6">
-          <h1 className="text-4xl font-light text-center mb-2">5</h1>
-          <p className="text-center text-lg text-gray-500">
-            Nombre de produits
-          </p>
+    <section className="py-12 bg-gradient-to-r from-green-600/20 to-green-600/20 rounded-2xl border border-transparent shadow-lg">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid md:grid-cols-4 gap-16">
+          <div className="flex flex-col items-center text-center group">
+            <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <FaMotorcycle className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-light text-black mb-2">
+              Livraison Rapide
+            </h3>
+          </div>
+
+          <div className="flex flex-col items-center text-center group">
+            <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <FaLeaf className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-light text-black mb-2">
+              Ingrédients Frais
+            </h3>
+          </div>
+
+          <div className="flex flex-col items-center text-center group">
+            <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <FaStar className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-light text-black mb-2">
+              Qualité Garantie
+            </h3>
+          </div>
+
+          <div className="flex flex-col items-center text-center group">
+            <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <FaHeadset className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-xl font-light text-black mb-2">Support 24/7</h3>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
