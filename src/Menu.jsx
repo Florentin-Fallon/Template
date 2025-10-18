@@ -4,6 +4,8 @@ import MenuSection from "./components/UI/MenuSection";
 import MenuSectionR from "./components/UI/MenuSectionR";
 import burgerImage from "./assets/burger.png";
 import burgerImage2 from "./assets/burger-chicken.png";
+import burgerImage3 from "./assets/burger-bacon.png";
+import burgerImage4 from "./assets/burger-t.png";
 function Menu() {
   return (
     <div className="min-h-screen">
@@ -30,6 +32,18 @@ function Menu() {
       <MenuSectionR
         burgerImage={burgerImage2}
         name="Burger chicken"
+        price="19,90€"
+        description="Burger avec 2 steaks, cheddar, bacon, oignon, sauce maison"
+      />
+      <MenuSection
+        burgerImage={burgerImage3}
+        name="Burger bacon"
+        price="19,90€"
+        description="Burger avec 2 steaks, cheddar, bacon, oignon, sauce maison"
+      />
+      <MenuSectionR
+        burgerImage={burgerImage4}
+        name="Burger tikka"
         price="19,90€"
         description="Burger avec 2 steaks, cheddar, bacon, oignon, sauce maison"
       />

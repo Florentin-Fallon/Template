@@ -4,11 +4,12 @@ import burgerImage from "../../assets/burger.png";
 import burgerImage2 from "../../assets/burger-chicken.png";
 import burgerImage3 from "../../assets/burger-bacon.png";
 import burgerImage4 from "../../assets/burger-t.png";
+import { Link } from "react-router-dom";
 function Product() {
   return (
     <div className="my-28">
       <h1 className="text-center text-5xl font-bold mb-20 border-b-2 border-green-600/80 pb-4 mx-auto w-fit">
-        Nos burgers
+        <Link to="/menu">Nos burgers</Link>
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 my-12">
         <Card
@@ -37,7 +38,7 @@ function Product() {
         />
         <Card
           burgerImage={burgerImage4}
-          Name="Burger bacon"
+          Name="Burger tikka"
           ingredient="Boeuf"
           ingredient1="Cheddar"
           ingredient2="Oignon"

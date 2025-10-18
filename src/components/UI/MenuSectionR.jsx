@@ -2,7 +2,24 @@ import React from "react";
 
 function MenuSectionR({ name, price, description, burgerImage }) {
   return (
-    <div className="py-auto bg-white flex items-center justify-center gap-56 py-16">
+    <div className="py-auto bg-white flex items-center justify-center gap-56 py-16 relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-24 w-32 h-3 bg-red-400/30 rounded-full blur-sm transform rotate-12"></div>
+        <div className="absolute top-28 left-32 w-24 h-2 bg-red-500/25 rounded-full blur-sm transform -rotate-6"></div>
+        <div className="absolute bottom-32 right-20 w-28 h-2 bg-red-300/35 rounded-full blur-sm transform rotate-8"></div>
+
+        <div className="absolute top-36 right-24 w-20 h-20 bg-purple-300/20 rounded-full blur-sm"></div>
+        <div className="absolute bottom-40 left-20 w-16 h-16 bg-purple-400/25 rounded-full blur-sm"></div>
+
+        <div className="absolute top-44 left-36 w-16 h-8 bg-green-400/30 rounded-full blur-sm transform rotate-45"></div>
+        <div className="absolute bottom-24 right-32 w-12 h-6 bg-green-500/25 rounded-full blur-sm transform -rotate-30"></div>
+
+        <div className="absolute top-52 right-16 w-8 h-12 bg-orange-400/35 rounded-full blur-sm transform rotate-30"></div>
+        <div className="absolute bottom-36 left-28 w-6 h-10 bg-orange-500/30 rounded-full blur-sm transform -rotate-45"></div>
+
+        <div className="absolute top-60 left-12 w-24 h-12 bg-brown-400/25 rounded-lg blur-sm transform rotate-15"></div>
+        <div className="absolute bottom-44 right-24 w-20 h-10 bg-brown-500/20 rounded-lg blur-sm transform -rotate-20"></div>
+      </div>
       <div
         className="relative overflow-hidden "
         style={{
